@@ -690,11 +690,11 @@ body {
 }
 .site-meta {
   margin: 0;
-  text-align: center;
+  text-align: 
 }
 @media (max-width: 767px) {
   .site-meta {
-    text-align: center;
+    text-align: ;
   }
 }
 .brand {
