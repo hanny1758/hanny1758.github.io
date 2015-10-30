@@ -699,6 +699,7 @@ body {
 }
 .brand {
   position: relative;
+  top:-36px;
   display: inline-block;
   padding: 0 40px;
   color: #fff;
