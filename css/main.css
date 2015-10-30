@@ -679,7 +679,7 @@ body {
   }
 }
 .headband {
-  height: 3px;
+  height: 30px;
   background: #222;
 }
 .header {
@@ -699,6 +699,8 @@ body {
 }
 .brand {
   position: relative;
+  top:-100px;
+  left:-350px;
   display: inline-block;
   padding: 0 40px;
   color: #fff;
