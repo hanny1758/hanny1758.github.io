@@ -633,7 +633,7 @@ body {
 }
 .header-inner {
   margin: 0 auto;
-  padding: 100px 0 70px;
+ 
   width: 1200px;
 }
 .one-column .header-inner {
@@ -679,7 +679,7 @@ body {
   }
 }
 .headband {
-  height: 32px;
+  height: 30px;
   background: #222;
 }
 .header {
@@ -699,8 +699,6 @@ body {
 }
 .brand {
   position: relative;
-  top:-135px;
-  left:-50px;
   display: inline-block;
   padding: 0 40px;
   color: #fff;
