@@ -43,7 +43,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Apache," />
 
 
 
@@ -59,19 +59,19 @@
 
 
 
-<meta name="description" content="解决导入maven项目出现乱码问题1.问题分析：jdk版本 、tomcat服务器、 maven的问题2.个个排除后，发现问题是jar包的丢失3.在项目 上面 按 alt + enter ，看maven管理的jar包4.在命令行输入mvn clean eclipse:clean eclipse:eclipse  -U
-5.更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,在从项目WEB-I">
+<meta name="description" content="apache服务器部署文件要想将文件部署在apache服务器上需要完成以下步骤。1.修改/etc/apache2目录下的ports.conf文件，显示的内容为：
+if you just change the port or add more ports here, you  will likely also have to change the virtualhost statement in/e">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java EE">
-<meta property="og:url" content="http://ihanns.com/2015/11/05/j2ee/index.html">
+<meta property="og:title" content="Apache">
+<meta property="og:url" content="http://ihanns.com/2016/03/19/apache/index.html">
 <meta property="og:site_name" content="Hing's Bolg">
-<meta property="og:description" content="解决导入maven项目出现乱码问题1.问题分析：jdk版本 、tomcat服务器、 maven的问题2.个个排除后，发现问题是jar包的丢失3.在项目 上面 按 alt + enter ，看maven管理的jar包4.在命令行输入mvn clean eclipse:clean eclipse:eclipse  -U
-5.更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,在从项目WEB-I">
-<meta property="og:updated_time" content="2015-12-05T06:57:52.602Z">
+<meta property="og:description" content="apache服务器部署文件要想将文件部署在apache服务器上需要完成以下步骤。1.修改/etc/apache2目录下的ports.conf文件，显示的内容为：
+if you just change the port or add more ports here, you  will likely also have to change the virtualhost statement in/e">
+<meta property="og:updated_time" content="2016-04-07T13:10:27.439Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java EE">
-<meta name="twitter:description" content="解决导入maven项目出现乱码问题1.问题分析：jdk版本 、tomcat服务器、 maven的问题2.个个排除后，发现问题是jar包的丢失3.在项目 上面 按 alt + enter ，看maven管理的jar包4.在命令行输入mvn clean eclipse:clean eclipse:eclipse  -U
-5.更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,在从项目WEB-I">
+<meta name="twitter:title" content="Apache">
+<meta name="twitter:description" content="apache服务器部署文件要想将文件部署在apache服务器上需要完成以下步骤。1.修改/etc/apache2目录下的ports.conf文件，显示的内容为：
+if you just change the port or add more ports here, you  will likely also have to change the virtualhost statement in/e">
 
 
 
@@ -83,7 +83,7 @@
   };
 </script>
 
-  <title> Java EE | Hing's Bolg </title>
+  <title> Apache | Hing's Bolg </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -199,7 +199,7 @@
             
             
               
-                Java EE
+                Apache
               
             
           </h1>
@@ -208,8 +208,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-05T12:46:40+08:00" content="2015-11-05">
-              2015-11-05
+            <time itemprop="dateCreated" datetime="2016-03-19T07:07:07+08:00" content="2016-03-19">
+              2016-03-19
             </time>
           </span>
 
@@ -232,30 +232,71 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="解决导入maven项目出现乱码问题">解决导入maven项目出现乱码问题</h2><h4 id="1-问题分析：jdk版本_、tomcat服务器、_maven的问题">1.问题分析：jdk版本 、tomcat服务器、 maven的问题</h4><h4 id="2-个个排除后，发现问题是jar包的丢失">2.个个排除后，发现问题是jar包的丢失</h4><h4 id="3-在项目_上面_按_alt_+_enter_，看maven管理的jar包">3.在项目 上面 按 alt + enter ，看maven管理的jar包</h4><h4 id="4-在命令行输入">4.在命令行输入</h4><pre><code><span class="tag">mvn</span> <span class="tag">clean</span> <span class="tag">eclipse</span><span class="pseudo">:clean</span> <span class="tag">eclipse</span><span class="pseudo">:eclipse</span>  <span class="tag">-U</span>
-</code></pre><h4 id="5-更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,">5.更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,</h4><pre><code>在从项目<span class="constant">WEB</span>-<span class="constant">INF</span>/<span class="class"><span class="keyword">lib</span>中重新加一遍，小问题解决。</span>
-</code></pre></span>
+        <span itemprop="articleBody"><h1 id="apache服务器部署文件">apache服务器部署文件</h1><h4 id="要想将文件部署在apache服务器上需要完成以下步骤。">要想将文件部署在apache服务器上需要完成以下步骤。</h4><p>1.修改/etc/apache2目录下的ports.conf文件，显示的内容为：</p>
+<p>if you just change the port or add more ports here, you  will likely also have to change the virtualhost statement in<br>/etc/apache2/sites-enabled/000-default.conf </p>
+<pre><code><span class="keyword"><span class="common">Listen</span></span> 80
+<span class="keyword"><span class="common">Listen</span></span> 8099
+<span class="keyword"><span class="common">Listen</span></span> 8000
+<span class="keyword"><span class="common">Listen</span></span> 8100
+<span class="keyword"><span class="common">Listen</span></span> 8200
+</code></pre><p>如果要部署新的文件，在该文件中，在最后一个Listen 8200后面添加所要添加文件占用的端口，如要占用8300端口，只需要在文件的最后面添加Listen 8300.</p>
+<p>2.修改/etc/apache2/sites-available目录下的000-default.conf文件，在<virtualhosht>标签为<virtualhost *:8200=""></virtualhost></virtualhosht></p>
+<pre><code><span class="comment"># The ServerName directive sets the request scheme, hostname and port that</span>
+<span class="comment"># the server uses to identify itself. This is used when creating</span>
+<span class="comment"># redirection URLs. In the context of virtual hosts, the ServerName</span>
+<span class="comment"># specifies what hostname must appear in the request's Host: header to</span>
+<span class="comment"># match this virtual host. For the default virtual host (this file) this</span>
+<span class="comment"># value is not decisive as it is used as a last resort host regardless.</span>
+<span class="comment"># However, you must set it for any further virtual host explicitly.</span>
+<span class="comment">#ServerName www.example.com</span>
+
+<span class="keyword">ServerAdmin</span> webmaster@localhost
+<span class="keyword"><span class="common">DocumentRoot</span></span> /home/dfsm/electric/ 
+
+<span class="comment"># Available loglevels: trace8, ..., trace1, debug, info, notice, warn,</span>
+<span class="comment"># error, crit, alert, emerg.</span>
+<span class="comment"># It is also possible to configure the loglevel for particular</span>
+<span class="comment"># modules, e.g.</span>
+<span class="comment">#LogLevel info ssl:warn</span>
+
+<span class="keyword">ErrorLog</span> <span class="cbracket">${APACHE_LOG_DIR}</span>/electric/error.log
+<span class="keyword">CustomLog</span> <span class="cbracket">${APACHE_LOG_DIR}</span>/electric/access.log combined
+
+<span class="tag">&lt;Directory /home/dfsm/electric&gt;</span>
+    <span class="keyword">Require</span> <span class="literal">all</span> granted
+<span class="tag">&lt;/Directory&gt;</span>
+<span class="comment"># For most configuration files from conf-available/, which are</span>
+<span class="comment"># enabled or disabled at a global level, it is possible to</span>
+<span class="comment"># include a line for only one particular virtual host. For example the</span>
+<span class="comment"># following line enables the CGI configuration for this host only</span>
+<span class="comment"># after it has been globally disabled with "a2disconf".</span>
+</code></pre><p>下添加同样的文件，同时注意要修改其中文件的相应位置.此处DocumentRoot路径应为文件部署的路径，如我把文件解压后的文件夹为：/electric，所有index.html文件等都在该路径下，则将DocumentRoot设置为.html的父目录即可。</p>
+<p>3.用ftp登录，用put方法将所要部署的文件上传到服务器相应的位置。</p>
+<p>4.此处应注意的是：步骤1和2是用SSH远程进行修改文件的，而上传文件到服务器，需用ftp来进行上传。</p>
+</span>
       
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Apache/" rel="tag">#Apache</a>
+          
+        </div>
       
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/01/lift/" rel="next" title="雄鹰和蜗牛">
-                <i class="fa fa-chevron-left"></i> 雄鹰和蜗牛
+              <a href="/2015/11/20/bootstrap/" rel="next" title="Bootstrap">
+                <i class="fa fa-chevron-left"></i> Bootstrap
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/20/bootstrap/" rel="prev" title="Bootstrap">
-                Bootstrap <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -385,7 +426,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决导入maven项目出现乱码问题"><span class="nav-number">1.</span> <span class="nav-text">解决导入maven项目出现乱码问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-问题分析：jdk版本_、tomcat服务器、_maven的问题"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.问题分析：jdk版本 、tomcat服务器、 maven的问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-个个排除后，发现问题是jar包的丢失"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.个个排除后，发现问题是jar包的丢失</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-在项目_上面_按_alt_+_enter_，看maven管理的jar包"><span class="nav-number">1.0.3.</span> <span class="nav-text">3.在项目 上面 按 alt + enter ，看maven管理的jar包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-在命令行输入"><span class="nav-number">1.0.4.</span> <span class="nav-text">4.在命令行输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,"><span class="nav-number">1.0.5.</span> <span class="nav-text">5.更新完jar包后，解决掉了中文乱码问题，将jar包全部删掉,</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#apache服务器部署文件"><span class="nav-number">1.</span> <span class="nav-text">apache服务器部署文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#要想将文件部署在apache服务器上需要完成以下步骤。"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">要想将文件部署在apache服务器上需要完成以下步骤。</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
